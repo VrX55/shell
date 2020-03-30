@@ -18,12 +18,12 @@ def cms(url):
  
    op =urllib2.urlopen(url,timeout=7)
    if "Upload" in op.read():
-     print( "[\x1b[32mLIVE\x1b[37m] : "+url)
+     print( "[\x1b[32mLIVE\x1b[37m]: "+url)
      open("found.txt","a").write(url)
 
   
  except:
-    print( "[\x1b[31mDIEE\x1b[37m] : "+ url)
+    print( "[\x1b[31mDIEE\x1b[37m]: "+ url)
     pass
 
 
